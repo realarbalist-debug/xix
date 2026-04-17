@@ -1,8 +1,8 @@
 FROM gojolvl99/gojo-v2-core:latest
 
 LABEL maintainer="Cxlvins"
-LABEL description="Cloud Run Xray HTTP Upgrade (Trojan WS + Trojan HU)"
-LABEL version="3.2"
+LABEL description="Cloud Run Xray HTTP Upgrade (Trojan HU only)"
+LABEL version="3.3"
 
 WORKDIR /etc/xray
 
@@ -13,7 +13,6 @@ EXPOSE 8080
 
 # reduce overhead
 ENV XRAY_LOGLEVEL=warning
-ENV XRAY_WORKERS=4
 
 # run xray
 ENTRYPOINT ["xray"]
