@@ -32,7 +32,13 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/@CxptxinCxlvin"
+          "path": "/@CxptxinCxlvin",
+          "maxEarlyData": 1024,
+          "acceptProxyProtocol": true
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "reusePort": true
         }
       }
     },
@@ -53,9 +59,13 @@
         "destOverride": ["http", "tls"]
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
+        "network": "httpupgrade",
+        "httpupgradeSettings": {
           "path": "/@CxptxinCxlvin-aup"
+        },
+        "sockopt": {
+          "tcpFastOpen": true,
+          "reusePort": true
         }
       }
     }
