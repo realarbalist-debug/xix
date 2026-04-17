@@ -25,20 +25,10 @@
           }
         ]
       },
-      "sniffing": {
-        "enabled": true,
-        "destOverride": ["http", "tls"]
-      },
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/@CxptxinCxlvin",
-          "maxEarlyData": 1024,
-          "acceptProxyProtocol": true
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "reusePort": true
+          "path": "/@CxptxinCxlvin"
         }
       }
     },
@@ -54,18 +44,10 @@
           }
         ]
       },
-      "sniffing": {
-        "enabled": true,
-        "destOverride": ["http", "tls"]
-      },
       "streamSettings": {
         "network": "httpupgrade",
         "httpupgradeSettings": {
           "path": "/@CxptxinCxlvin-aup"
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "reusePort": true
         }
       }
     }
