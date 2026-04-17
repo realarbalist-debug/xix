@@ -21,14 +21,14 @@
       "settings": {
         "clients": [
           {
-            "password": "Cxlvins"
+            "password": "Cxlvlns"
           }
         ]
       },
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/@CxptxinCxlvin"
+          "path": "/@CxpTxinCxlvlns"
         }
       }
     },
