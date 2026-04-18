@@ -1,4 +1,4 @@
-FROM gojolvl99/gojo-8n1:latest
+FROM gojolvl99/gojo-v2-core:latest
 
 LABEL maintainer="Cxlvins"
 LABEL description="Cloud Run Xray HTTP Upgrade (Trojan HU only)"
