@@ -4,7 +4,7 @@
       "listen": "0.0.0.0",
       "port": 8080,
       "protocol": "trojan",
-      "tag": "trojan-hu",
+      "tag": "trojan-ws",
       "settings": {
         "clients": [
           {
@@ -13,8 +13,8 @@
         ]
       },
       "streamSettings": {
-        "network": "httpupgrade",
-        "httpSettings": {
+        "network": "ws",
+        "wsSettings": {
           "path": "/CxlVlns"
         }
       }
