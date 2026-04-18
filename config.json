@@ -14,8 +14,8 @@
       },
       "streamSettings": {
         "network": "httpupgrade",
-        "httpupgradeSettings": {
-          "path": "/@CxptxinCxlvlns"
+        "httpSettings": {
+          "path": "/CxlVlns"
         }
       }
     }
