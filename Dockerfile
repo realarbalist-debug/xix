@@ -8,12 +8,12 @@ WORKDIR /etc/xray
 
 COPY config.json /etc/xray/config.json
 
-# Cloud Run uses ONLY one port
+# Cloud Run only exposes one port
 EXPOSE 8080
 
-# reduce overhead
+# Reduce log overhead
 ENV XRAY_LOGLEVEL=warning
 
-# run xray
+# Run Xray
 ENTRYPOINT ["xray"]
 CMD ["-config", "/etc/xray/config.json"]
