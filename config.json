@@ -7,28 +7,7 @@
       "listen": "0.0.0.0",
       "port": 8080,
       "protocol": "trojan",
-      "settings": {
-        "clients": [
-          {
-            "password": "Cxlv1ns"
-          }
-        ],
-        "fallbacks": [
-          {
-            "path": "/CxlVlns",
-            "dest": 3001
-          },
-          {
-            "path": "/kalVlns",
-            "dest": 3002
-          }
-        ]
-      }
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 3001,
-      "protocol": "trojan",
+      "tag": "trojan-ws",
       "settings": {
         "clients": [
           {
@@ -40,24 +19,6 @@
         "network": "ws",
         "wsSettings": {
           "path": "/CxlVlns"
-        }
-      }
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 3002,
-      "protocol": "trojan",
-      "settings": {
-        "clients": [
-          {
-            "password": "Cxlv1ns"
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "httpupgrade",
-        "httpSettings": {
-          "path": "/kalVlns"
         }
       }
     }
